@@ -1,4 +1,4 @@
-# data_pipeline
+# DataPipeline
 
 Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no final
  
@@ -15,3 +15,5 @@ Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no fi
 Clone o projeto:
 * git clone https://github.com/aninhasalesp/data_pipeline.git
 
+## Com docker:
+* [Install docker](https://docs.docker.com/get-docker/)
