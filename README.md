@@ -10,3 +10,8 @@ Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no fi
 - remover linhas com valor_em_reais = 0 ou quantidade = 0
 - trocar os dados da coluna estado para a sigla da UF correspondente, ex.: Rio de Janeiro vira RJ
 
+## Como configurar o setup
+
+Clone o projeto:
+* git clone https://github.com/aninhasalesp/data_pipeline.git
+
