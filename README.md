@@ -16,4 +16,5 @@ Clone o projeto:
 * git clone https://github.com/aninhasalesp/data_pipeline.git
 
 ## Com docker:
-* [Install docker](https://docs.docker.com/get-docker/)
+1. [Install docker](https://docs.docker.com/get-docker/)
+2. `cd data_pipeline´ 
