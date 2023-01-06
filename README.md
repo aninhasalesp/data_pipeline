@@ -12,9 +12,9 @@ Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no fi
 
 ## Como configurar o setup
 
-Clone o projeto:
+### Clone o projeto:
 * git clone https://github.com/aninhasalesp/data_pipeline.git
 
-Com docker:
+### Com docker:
 1. [Install docker](https://docs.docker.com/get-docker/)
 2. *cd data_pipeline* para encontrar o projeto
