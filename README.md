@@ -17,5 +17,5 @@ Clone o projeto:
 
 ## Com docker:
 1. [Install docker](https://docs.docker.com/get-docker/)
-2. cd data_pipeline para encontrar o projeto
+2. * cd data_pipeline * para encontrar o projeto
 3. 
