@@ -1,4 +1,3 @@
 # data_pipeline
 
-Pipeline criado com o objetivo de gerenciar dados.
-
+Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no final.
