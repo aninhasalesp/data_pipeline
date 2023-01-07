@@ -1,6 +1,6 @@
 # DataPipeline
 
-Pipeline de operações criado para gerenciar dados e gerar um arquivo.csv no final
+Pipeline de operações criado para gerenciar e gerar um arquivo.csv
  
 ## Desafio
 
