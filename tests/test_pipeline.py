@@ -9,8 +9,9 @@ from pipeline import run as run_pipeline
 
 def test_pipeline() -> None:
     """Test main pipeline"""
-    with open("resources/dados_tratados.csv", "r") as dados_tratados:
+    resources_path = str(Path(__file__).parent / "resources")
+    with open(f"{resources_path}/dados_tratados.csv", "r") as dados_tratados:
         assert run_pipeline(
-            "resources/censo_estado.csv",
-            "resources/rouanet.csv"
+            f"{resources_path}/censo_estado.csv",
+            f"{resources_path}/rouanet.csv"
         ) == dados_tratados.read()
