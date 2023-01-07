@@ -31,3 +31,29 @@ def run(censo_csv_path: str, rouanet_csv_path: str) -> str:
 
     result_dataframe = cleared_dataframe.replace({"estado": estados_uf})
     return result_dataframe.to_csv()
+
+
+if __name__ == "__main__":
+    """runnning pipeline as cli"""
+    from argparse import ArgumentParser
+    from os import path
+
+    parser = ArgumentParser(
+        prog="",
+        description="",
+    )
+    parser.add_argument("censo_path", help="Caminho do arquivo de censo")
+    parser.add_argument("rouanet_path", help="")
+    parser.add_argument("-o", "--output_path", required=False, help="")
+
+    args = parser.parse_args()
+
+    result_csv = run(args.censo_path, args.rouanet_path)
+
+    if output_path := args.output_path:
+        if path.isdir(output_path):
+            output_path = path.join(output_path, "dados_tratados.csv")
+        with open(output_path, "w") as output_file:
+            output_file.write(result_csv)
+    else:
+        print(result_csv)
