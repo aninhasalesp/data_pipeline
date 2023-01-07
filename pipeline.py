@@ -38,13 +38,14 @@ if __name__ == "__main__":
     from argparse import ArgumentParser
     from os import path
 
-    parser = ArgumentParser(
-        prog="",
-        description="",
+    parser = ArgumentParser(prog="Trata dados")
+    parser.add_argument("censo_path", help="Caminho do arquivo censo no formato csv")
+    parser.add_argument("rouanet_path", help="Caminho do arquivo rouanet no formato csv")
+    parser.add_argument(
+        "-o", "--output_path",
+        required=False,
+        help="Caminho do arquivo de saída (opcional)"
     )
-    parser.add_argument("censo_path", help="Caminho do arquivo de censo")
-    parser.add_argument("rouanet_path", help="")
-    parser.add_argument("-o", "--output_path", required=False, help="")
 
     args = parser.parse_args()
 
