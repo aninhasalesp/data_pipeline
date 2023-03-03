@@ -20,7 +20,7 @@ def run(censo_csv_path: str, rouanet_csv_path: str) -> str:
     )
     
     cleared_dataframe = removed_duplicated_dataframe.drop(
-    removed_duplicated_dataframe[
+        removed_duplicated_dataframe[
             (
                 removed_duplicated_dataframe.valor_em_reais == 0
             ) | (
